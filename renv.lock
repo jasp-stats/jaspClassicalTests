@@ -3071,25 +3071,12 @@
       "Package": "jaspFrequencies",
       "Version": "0.96.5",
       "Source": "GitHub",
-      "Requirements": [
-        "abtest",
-        "BayesFactor",
-        "bridgesampling",
-        "conting",
-        "multibridge",
-        "ggplot2",
-        "interp",
-        "jaspBase",
-        "jaspGraphs",
-        "plyr",
-        "stringr",
-        "vcd"
-      ],
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspFrequencies",
-      "RemoteSha": "784e7a234dbd8e25a73264d34d92e3c1ec01b552"
+      "RemoteRef": "master",
+      "RemoteSha": "b10dbf8d6983b63e197e385eae36ecc614e98682"
     },
     "jaspGraphs": {
       "Package": "jaspGraphs",
