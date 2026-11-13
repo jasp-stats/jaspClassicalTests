@@ -26,7 +26,7 @@
 #' @import jaspBase
 #' @import jaspRegression
 #' @export
-multipleCorrelations <- function(jaspResults, dataset, options, ...) {
+multipleCorrelationsInternal <- function(jaspResults, dataset, options, ...) {
 
   jaspRegression::CorrelationInternal(jaspResults, dataset, options)
 }

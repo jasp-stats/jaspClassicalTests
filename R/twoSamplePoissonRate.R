@@ -17,7 +17,7 @@
 
 #' @import jaspBase
 #' @export
-twoSamplePoissonRate <- function(jaspResults, dataset, options) {
+twoSamplePoissonRateInternal <- function(jaspResults, dataset, options) {
 
   inputType  <- options[["inputType"]]
   hasAnyTest <- options[["exactTest"]] || options[["normalApprox"]]

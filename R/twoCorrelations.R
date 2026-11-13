@@ -27,7 +27,7 @@
 #' @import jaspBase
 #' @importFrom stats cor complete.cases pnorm qnorm
 #' @export
-twoCorrelations <- function(jaspResults, dataset, options, ...) {
+twoCorrelationsInternal <- function(jaspResults, dataset, options, ...) {
   ready <- .twoCorrelationsReady(options)
 
   if (ready)

@@ -13,6 +13,7 @@ Description
 	license		: "GPL (>= 2)"
 	icon        : "ribbon-classical-tests.svg" // Located in /inst/icons/
 	preloadData: true
+	hasWrappers: true
 	requiresData: true
 
 	GroupTitle

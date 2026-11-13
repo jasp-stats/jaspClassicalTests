@@ -18,7 +18,6 @@
 import QtQuick
 import QtQuick.Layouts
 import JASP.Controls
-import JASP.Widgets
 import JASP
 import 'jaspTTest' // TODO these should be imported not manually copied
 import 'jaspTTest/common' // TODO these should be imported not manually copied

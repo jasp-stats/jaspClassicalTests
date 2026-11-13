@@ -22,7 +22,7 @@
 #' @import jaspBase
 #' @importFrom stats prop.test fisher.test qnorm
 #' @export
-twoProportions <- function(jaspResults, dataset, options, ...) {
+twoProportionsInternal <- function(jaspResults, dataset, options, ...) {
 
   data  <- .mpAggregateData(dataset, options)
   ready <- !is.null(data) && nrow(data) == 2

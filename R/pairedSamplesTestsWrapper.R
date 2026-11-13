@@ -1,0 +1,115 @@
+#
+# Copyright (C) 2013-2025 University of Amsterdam
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+# This is a generated file. Don't change it!
+
+#' Two Dependent Means
+#'
+#' The paired samples t-test allows the user to estimate the effect size and test the null hypothesis that the population mean of the difference between observations equals 0 in dependent groups.
+#' ## Assumptions
+#' - The difference score is continuous.
+#' - The difference scores are a random sample from the population.
+#' - The residuals (i.e., the difference scores) are normally distributed.
+#'
+#' @param barPlotErrorType, Displays a bar plot of the sample mean(s), including error bars.
+#' \itemize{
+#'   \item \code{"ci"}: Coverage of the confidence intervals (Or credible intervals in case of a Bayesian analysis) in percentages. By default, the confidence interval is set to 95%. This can be changed into the desired percentage.
+#'   \item \code{"se"}: By selecting this option, the error bars will represent standard errors of the mean of each condition.
+#' }
+#' @param barPlotYAxisFixedToZero, Forces the graph to show the default x-axis at y = 0.
+#'    Defaults to \code{TRUE}.
+#' @param descriptives, Sample size, sample mean, sample standard deviation, standard error of the mean for each measure.
+#'    Defaults to \code{FALSE}.
+#' @param descriptivesPlot, Displays the sample means and the confidence intervals for each measure (see Morey [2008] for the computation of the standard error of the mean in paired designs.)
+#'    Defaults to \code{FALSE}.
+#' @param differenceRaincloudPlot, Displays a raincloud plot of the differences between the two measures.
+#'    Defaults to \code{FALSE}.
+#' @param differenceRaincloudPlotHorizontal, Changes the orientation of the raincloud difference plot so that the x-axis represents the dependent variable.
+#'    Defaults to \code{FALSE}.
+#' @param effectSize, For the Student t-test, the effect size is given by Cohen's d; for the Wilcoxon test, the effect size is given by the matched rank biserial correlation.
+#'    Defaults to \code{FALSE}.
+#' @param effectSizeCi, Confidence interval for the effect size.
+#'    Defaults to \code{FALSE}.
+#' @param effectSizeCorrection, Correct the effect size for the correlation between the observed values, to prevent overestimating the effect (Dunlap et al., 1996).
+#'    Defaults to \code{FALSE}.
+#' @param meanDifference, For the Student's t-test the location parameter is given by the mean difference 'd'; for the Wilcoxon signed-rank test, the location parameter is given by the Hodges-Lehmann estimate.
+#'    Defaults to \code{FALSE}.
+#' @param meanDifferenceCi, Confidence interval for the location parameter. By default, the confidence interval is set to 95%. This can be changed into the desired percentage.
+#'    Defaults to \code{FALSE}.
+#' @param normalityTest, Shapiro-Wilk test of normality.
+#'    Defaults to \code{FALSE}.
+#' @param pairs, The variables here have their difference computed. Multiple differences can be analysed at the same time by specifying different rows. In other words, each row represents a difference score.
+#' @param qqPlot, Displays Q-Q plot of the standardized residuals. The confidence band shows the expected range of residuals under normality; points outside the band suggest deviations from normality.
+#'    Defaults to \code{FALSE}.
+#' @param raincloudPlot, Displays the individual data points (colored dots), box plots, and densities for each measure.
+#'    Defaults to \code{FALSE}.
+#' @param student, Student's paired sample t-test.This option is selected by default.
+#'    Defaults to \code{TRUE}.
+#' @param vovkSellke, Shows the maximum ratio of the likelihood of the obtained p value under H1 vs the likelihood of the obtained p value under H0. For example, if the two-sided p-value equals .05, the Vovk-Sellke MPR equals 2.46, indicating that this p-value is at most 2.46 times more likely to occur under H1 than under H0.
+#'    Defaults to \code{FALSE}.
+#' @param wilcoxon, Non-parametric version of the paired samples t-test. Use when model residuals (i.e., group differences) are not normally distributed.
+#'    Defaults to \code{FALSE}.
+pairedSamplesTests <- function(
+          data = NULL,
+          version = "1",
+          alternative = "twoSided",
+          barPlot = FALSE,
+          barPlotCiLevel = 0.95,
+          barPlotErrorType = "ci",
+          barPlotYAxisFixedToZero = TRUE,
+          descriptives = FALSE,
+          descriptivesPlot = FALSE,
+          descriptivesPlotCiLevel = 0.95,
+          differenceRaincloudPlot = FALSE,
+          differenceRaincloudPlotHorizontal = FALSE,
+          effectSize = FALSE,
+          effectSizeCi = FALSE,
+          effectSizeCiLevel = 0.95,
+          effectSizeCorrection = FALSE,
+          meanDifference = FALSE,
+          meanDifferenceCi = FALSE,
+          meanDifferenceCiLevel = 0.95,
+          naAction = "perDependent",
+          normalityTest = FALSE,
+          pairs = list(),
+          plotHeight = 300,
+          plotWidth = 350,
+          qqPlot = FALSE,
+          qqPlotCi = FALSE,
+          qqPlotCiLevel = 0.95,
+          raincloudPlot = FALSE,
+          student = TRUE,
+          vovkSellke = FALSE,
+          wilcoxon = FALSE) {
+
+   options <- mget(names(formals(sys.function())), envir = environment(), inherits = FALSE)
+   options[["data"]] <- NULL
+   options[["version"]] <- NULL
+
+
+   if (!jaspBase::jaspResultsCalledFromJasp() && !is.null(data)) {
+      jaspBase::storeDataSet(data)
+   }
+
+   optionsWithFormula <- c("pairs")
+   for (name in optionsWithFormula) {
+      if ((name %in% optionsWithFormula) && inherits(options[[name]], "formula")) options[[name]] = jaspBase::jaspFormula(options[[name]], data)   }
+
+   # Options not given in the call get their default from the form, which can depend on the other options.
+   options <- options[names(options) %in% names(match.call())[-1L]]
+   return(jaspBase::runWrappedAnalysis("jaspClassicalTests", "pairedSamplesTests", "pairedSamplesTests.qml", options, version, TRUE))
+}
