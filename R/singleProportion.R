@@ -17,7 +17,7 @@
 
 #' @import jaspFrequencies
 #' @export
-singleProportion <- function(jaspResults, dataset, options, ...) {
+singleProportionInternal <- function(jaspResults, dataset, options, ...) {
   dataset <- .spDropMissingCounts(dataset, options)
   return(jaspFrequencies::BinomialTestInternal(jaspResults, dataset, options, ...))
 }

@@ -18,7 +18,7 @@
 #' @import jaspBase
 #' @importFrom stats bartlett.test var.test shapiro.test na.omit pchisq pf pnorm qnorm sd uniroot var ave lm anova median
 #' @export
-multipleVariances <- function(jaspResults, dataset, options, ...) {
+multipleVariancesInternal <- function(jaspResults, dataset, options, ...) {
   # makes the bootstrap confidence interval reproducible when the user sets a seed
   jaspBase::.setSeedJASP(options)
 

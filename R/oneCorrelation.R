@@ -22,7 +22,7 @@
 #' @import jaspBase
 #' @importFrom stats cor cor.test complete.cases pnorm qnorm quantile
 #' @export
-oneCorrelation <- function(jaspResults, dataset, options, ...) {
+oneCorrelationInternal <- function(jaspResults, dataset, options, ...) {
   # makes the bootstrap confidence intervals reproducible when the user sets a seed
   jaspBase::.setSeedJASP(options)
 

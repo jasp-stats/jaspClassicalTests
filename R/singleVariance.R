@@ -17,7 +17,7 @@
 
 #' @import jaspBase
 #' @export
-singleVariance <- function(jaspResults, dataset, options, ...) {
+singleVarianceInternal <- function(jaspResults, dataset, options, ...) {
   # makes the bootstrap confidence interval reproducible when the user sets a seed
   jaspBase::.setSeedJASP(options)
 

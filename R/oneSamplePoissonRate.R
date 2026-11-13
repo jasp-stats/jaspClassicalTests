@@ -18,7 +18,7 @@
 #' @importFrom stats poisson.test pnorm qnorm
 #' @import jaspBase
 #' @export
-oneSamplePoissonRate <- function(jaspResults, dataset, options) {
+oneSamplePoissonRateInternal <- function(jaspResults, dataset, options) {
 
   inputType  <- options[["inputType"]]
   hasAnyTest <- options[["exactTest"]] || options[["normalApprox"]]

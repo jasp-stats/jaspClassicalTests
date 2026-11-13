@@ -21,7 +21,7 @@
 #' @import jaspBase
 #' @importFrom stats prop.test
 #' @export
-multipleProportions <- function(jaspResults, dataset, options, ...) {
+multipleProportionsInternal <- function(jaspResults, dataset, options, ...) {
 
   data  <- .mpAggregateData(dataset, options)
   ready <- !is.null(data) && nrow(data) >= 2
