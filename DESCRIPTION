@@ -11,7 +11,7 @@ Description: Module that bundles classical statistical tests.
 License: GPL (>= 2)
 Encoding: UTF-8
 Imports:
-    DescTools,
+    boot,
     jaspBase,
     jaspFrequencies (>= 0.95.5),
     jaspRegression (>= 0.96.5),
