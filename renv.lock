@@ -142,48 +142,6 @@
         "Rcpp"
       ]
     },
-    "DescTools": {
-      "Package": "DescTools",
-      "Version": "0.99.60",
-      "Source": "Repository",
-      "Requirements": [
-        "base",
-        "boot",
-        "cli",
-        "data.table",
-        "Exact",
-        "expm",
-        "fs",
-        "gld",
-        "graphics",
-        "grDevices",
-        "haven",
-        "httr",
-        "MASS",
-        "methods",
-        "mvtnorm",
-        "R",
-        "Rcpp",
-        "readr",
-        "readxl",
-        "rstudioapi",
-        "stats",
-        "utils",
-        "withr"
-      ]
-    },
-    "Exact": {
-      "Package": "Exact",
-      "Version": "3.3",
-      "Source": "Repository",
-      "Requirements": [
-        "graphics",
-        "R",
-        "rootSolve",
-        "stats",
-        "utils"
-      ]
-    },
     "Formula": {
       "Package": "Formula",
       "Version": "1.2-6",
@@ -1033,16 +991,6 @@
         "R"
       ]
     },
-    "cellranger": {
-      "Package": "cellranger",
-      "Version": "1.1.0",
-      "Source": "Repository",
-      "Requirements": [
-        "R",
-        "rematch",
-        "tibble"
-      ]
-    },
     "checkmate": {
       "Package": "checkmate",
       "Version": "2.3.4",
@@ -1085,16 +1033,6 @@
       "Author": "Michel Lang [cre, aut] (ORCID: <https://orcid.org/0000-0001-9754-0393>), Bernd Bischl [ctb], Dénes Tóth [ctb] (ORCID: <https://orcid.org/0000-0003-4262-3217>)",
       "Maintainer": "Michel Lang <michellang@gmail.com>",
       "Repository": "RSPM"
-    },
-    "class": {
-      "Package": "class",
-      "Version": "7.3-24",
-      "Source": "Repository",
-      "Requirements": [
-        "R",
-        "stats",
-        "utils"
-      ]
     },
     "cli": {
       "Package": "cli",
@@ -1715,20 +1653,6 @@
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
       "Repository": "RSPM"
     },
-    "e1071": {
-      "Package": "e1071",
-      "Version": "1.7-17",
-      "Source": "Repository",
-      "Requirements": [
-        "class",
-        "graphics",
-        "grDevices",
-        "methods",
-        "proxy",
-        "stats",
-        "utils"
-      ]
-    },
     "effectsize": {
       "Package": "effectsize",
       "Version": "1.0.3",
@@ -1923,15 +1847,6 @@
       "Author": "Hadley Wickham [aut, cre], Yihui Xie [aut] (ORCID: <https://orcid.org/0000-0003-0645-5666>), Michael Lawrence [ctb], Thomas Kluyver [ctb], Jeroen Ooms [ctb], Barret Schloerke [ctb], Adam Ryczkowski [ctb], Hiroaki Yutani [ctb], Michel Lang [ctb], Karolis Koncevičius [ctb], Posit Software, PBC [cph, fnd]",
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
       "Repository": "CRAN"
-    },
-    "expm": {
-      "Package": "expm",
-      "Version": "1.0-1",
-      "Source": "Repository",
-      "Requirements": [
-        "Matrix",
-        "methods"
-      ]
     },
     "farver": {
       "Package": "farver",
@@ -2504,17 +2419,6 @@
         "R",
         "rlang",
         "scales"
-      ]
-    },
-    "gld": {
-      "Package": "gld",
-      "Version": "2.6.8",
-      "Source": "Repository",
-      "Requirements": [
-        "e1071",
-        "graphics",
-        "lmom",
-        "stats"
       ]
     },
     "glmnet": {
@@ -3435,16 +3339,6 @@
       "Author": "Alexandra Kuznetsova [aut], Per Bruun Brockhoff [aut, ths], Rune Haubo Bojesen Christensen [aut, cre] (ORCID: <https://orcid.org/0000-0002-4494-3399>), Sofie Pødenphant Jensen [ctb]",
       "Maintainer": "Rune Haubo Bojesen Christensen <Rune.Haubo@gmail.com>",
       "Repository": "CRAN"
-    },
-    "lmom": {
-      "Package": "lmom",
-      "Version": "3.3",
-      "Source": "Repository",
-      "Requirements": [
-        "graphics",
-        "R",
-        "stats"
-      ]
     },
     "lmtest": {
       "Package": "lmtest",
@@ -4643,16 +4537,6 @@
         "rlang"
       ]
     },
-    "proxy": {
-      "Package": "proxy",
-      "Version": "0.4-29",
-      "Source": "Repository",
-      "Requirements": [
-        "R",
-        "stats",
-        "utils"
-      ]
-    },
     "ps": {
       "Package": "ps",
       "Version": "1.9.3",
@@ -4844,19 +4728,6 @@
       "Maintainer": "Jennifer Bryan <jenny@posit.co>",
       "Repository": "CRAN"
     },
-    "readxl": {
-      "Package": "readxl",
-      "Version": "1.5.0.1",
-      "Source": "Repository",
-      "Requirements": [
-        "cellranger",
-        "cpp11",
-        "progress",
-        "R",
-        "tibble",
-        "utils"
-      ]
-    },
     "reformulas": {
       "Package": "reformulas",
       "Version": "0.4.4",
@@ -4867,26 +4738,6 @@
         "Rdpack",
         "stats"
       ]
-    },
-    "rematch": {
-      "Package": "rematch",
-      "Version": "2.0.0",
-      "Source": "Repository",
-      "Title": "Match Regular Expressions with a Nicer 'API'",
-      "Author": "Gabor Csardi",
-      "Maintainer": "Gabor Csardi <csardi.gabor@gmail.com>",
-      "Description": "A small wrapper on 'regexpr' to extract the matches and captured groups from the match of a regular expression to a character vector.",
-      "License": "MIT + file LICENSE",
-      "URL": "https://github.com/gaborcsardi/rematch",
-      "BugReports": "https://github.com/gaborcsardi/rematch/issues",
-      "RoxygenNote": "5.0.1.9000",
-      "Suggests": [
-        "covr",
-        "testthat"
-      ],
-      "Encoding": "UTF-8",
-      "NeedsCompilation": "no",
-      "Repository": "CRAN"
     },
     "remotes": {
       "Package": "remotes",
@@ -5050,17 +4901,6 @@
         "utils",
         "xfun",
         "yaml"
-      ]
-    },
-    "rootSolve": {
-      "Package": "rootSolve",
-      "Version": "1.8.2.4",
-      "Source": "Repository",
-      "Requirements": [
-        "graphics",
-        "grDevices",
-        "R",
-        "stats"
       ]
     },
     "rpart": {
