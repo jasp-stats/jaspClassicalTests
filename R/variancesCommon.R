@@ -36,7 +36,7 @@
 }
 
 # Adapted from Andri Signorell's VarCI in DescTools 0.99.60 (GPL >= 2).
-# https://github.com/cran/DescTools/blob/0.99.60/R/StatsAndCIs.r#L4297-L4342
+# https://github.com/cran/DescTools/blob/0.99.60/R/StatsAndCIs.r#L4377-L4424
 .varCi <- function(x, method = c("classic", "bonett", "norm", "basic", "stud", "perc", "bca"),
                    conf.level = 0.95, sides = c("two.sided", "left", "right"), na.rm = FALSE, R = 999) {
   if (na.rm)
